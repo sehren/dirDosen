@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Direktori Dosen</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="styles/ionicons.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark" style="background-color: #563d7c !important;">
+        <div class="container">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="images/umsulogo.png" width="40" height="40" alt="">
+                Universitas Muhammadiyah Sumatera Utara
+            </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <p style="margin-top: 1rem;margin-bottom:.5rem;font-weight: 300;font-size: 30px;">Penelusuran Data Dosen UMSU</p>
+            </div>
+            <div class="col-md-3">
+
+                <!-- Profile Image -->
+                <div class="box box-primary">
+                    <div class="box-body box-profile">
+                        <img class="profile-user-img img-responsive" src="../../images/user1.jpg" style="display: block;margin-left: auto;margin-right: auto;">
+            
+                        <h1 class="profile-username text-center"><%=dosen.namaDosen%></h1>
+            
+                        <p class="text-muted text-center">NIP <%=dosen.nip%></p>
+                        <p class="text-muted text-center">NIDN <%=dosen.nidn%></p>
+                        <ul class="list-group list-group-unbordered">
+                            <li class="list-group-item">
+                            <b>Jabatan Fungsional</b> <a class="pull-right"><%=dosen.jabatan%></a>
+                            </li>
+                            <li class="list-group-item">
+                            <b>Fakultas</b> <a class="pull-right"><%=dosen.namaFakultas%></a>
+                            </li>
+                            <li class="list-group-item">
+                            <b>Program Studi</b> <a class="pull-right"><%=dosen.namaProg%></a>
+                            </li>
+                            <li class="list-group-item">
+                            <b>Email</b> <a class="pull-right"><%=dosen.email%></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <div class="col-md-9">
+                
+                    <!-- About Me Box -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Riwayat Pendidikan</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <strong><i class="fa fa-book margin-r-5"></i> Strata I / Sarjana</strong>
+                                <hr>
+                                <ul class="list-group list-group-unbordered">
+                                    <li class="list-group-item">
+                                    <b>Jurusan</b> <a class="pull-right"><%=dosen.s1jurusan%></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <b>Institusi</b> <a class="pull-right"><%=dosen.s1inst%></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <b>Lokasi</b> <a class="pull-right"><%=dosen.s1lokasi%></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <b>Tahun</b> <a class="pull-right"><%=dosen.s1tahun%></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <strong><i class="fa fa-book margin-r-5"></i> Strata II / Magister</strong>
+                                <hr>
+                                <ul class="list-group list-group-unbordered">
+                                        <li class="list-group-item">
+                                        <b>Jurusan</b> <a class="pull-right"><%=dosen.s2jurusan%></a>
+                                        </li>
+                                        <li class="list-group-item">
+                                        <b>Institusi</b> <a class="pull-right"><%=dosen.s2inst%></a>
+                                        </li>
+                                        <li class="list-group-item">
+                                        <b>Lokasi</b> <a class="pull-right"><%=dosen.s2lokasi%></a>
+                                        </li>
+                                        <li class="list-group-item">
+                                        <b>Tahun</b> <a class="pull-right"><%=dosen.s2tahun%></a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
